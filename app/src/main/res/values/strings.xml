@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MusicStructureApp</string>
+    <string name="genre">Genre</string>
+    <string name="collection">Collection</string>
+</resources>

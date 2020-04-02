@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/artistNameColor"
+        android:layout_weight="12"
+        android:src="@drawable/ear_buds"/>
+
+
+    <ListView
+        android:layout_weight="3"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/albumBackground"
+        android:divider="@color/albumDividerColor"
+        android:dividerHeight="1dp"
+        android:orientation="vertical" />
+
+</LinearLayout>
