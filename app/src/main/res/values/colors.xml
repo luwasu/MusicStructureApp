@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2d2d2d</color>
-    <color name="colorPrimaryDark">#2d2d2d</color>
-    <color name="colorAccent">#606060</color>
-    <color name="albumBackground">#3f3f3f</color>
-    <color name="albumDividerColor">#666666</color>
-    <color name="artistNameColor">#8c8c8c</color>
-    <color name="songColor">#cccccc</color>
+    <color name="colorPrimary">#41c300</color>
+    <color name="colorPrimaryDark">#006900</color>
+    <color name="colorAccent">#85d565</color>
+    <color name="albumBackground">#006900</color>
+    <color name="albumDividerColor">#aae293</color>
+    <color name="artistNameColor">#cdeebe</color>
+    <color name="songColor">#cdeebe</color>
 </resources>

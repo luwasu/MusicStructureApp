@@ -37,7 +37,7 @@ public class GenreActivity extends AppCompatActivity {
         GenreAdapter adapter = new GenreAdapter(this, genres);
 
         // Get the ListView by id: list
-        final ListView listView = (ListView) findViewById(R.id.list);
+        final ListView listView = findViewById(R.id.list);
 
         // Set the adapter to listView
         listView.setAdapter(adapter);
