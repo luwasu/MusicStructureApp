@@ -23,14 +23,14 @@ public class GenreActivity extends AppCompatActivity {
         // Create a ArrayList<Genre>
         final ArrayList<Genre> genres = new ArrayList<>();
         // Adding genre's data
-        genres.add(new Genre("Rock", R.drawable.rock));
-        genres.add(new Genre("Metal", R.drawable.metal));
-        genres.add(new Genre("Indie", R.drawable.indie));
-        genres.add(new Genre("Blues", R.drawable.blues));
-        genres.add(new Genre("Jazz", R.drawable.jazz));
-        genres.add(new Genre("Folk", R.drawable.folk));
-        genres.add(new Genre("Hip Hop", R.drawable.hip_hop));
-        genres.add(new Genre("Soul", R.drawable.soul));
+        genres.add(new Genre("Rock", R.drawable.rock, R.drawable.rock));
+        genres.add(new Genre("Metal", R.drawable.metal, R.drawable.metal));
+        genres.add(new Genre("Indie", R.drawable.indie,R.drawable.indie));
+        genres.add(new Genre("Blues", R.drawable.blues, R.drawable.blues));
+        genres.add(new Genre("Jazz", R.drawable.jazz, R.drawable.jazz));
+        genres.add(new Genre("Folk", R.drawable.folk, R.drawable.folk));
+        genres.add(new Genre("Hip Hop", R.drawable.hip_hop, R.drawable.hip_hop));
+        genres.add(new Genre("Soul", R.drawable.soul, R.drawable.soul));
 
 
         // Create a GenreAdapter
@@ -54,11 +54,17 @@ public class GenreActivity extends AppCompatActivity {
                 // Create new Intent
                 Intent collectionIntent = new Intent(GenreActivity.this, CollectionActivity.class);
 
+                // Adding Extra info: COLLECTION_TITLE for the genre title,
+                // COLLECTION_COVER_IMG_ID for the cover image resource ID
+                collectionIntent.putExtra("COLLECTION_TITLE", genre.getGenreName());
+                collectionIntent.putExtra("COLLECTION_COVER_IMG_ID", genre.getCoverImageId());
+
+
                 // Start intent activity
                 startActivity(collectionIntent);
             }
-        });
 
+        });
 
     }
 }

@@ -7,9 +7,10 @@ public class Genre {
     private int mCoverImgId;
 
 
-    public Genre(String name, int genreImageId) {
+    public Genre(String name, int genreImageId, int coverImageId) {
         this.mGenreName = name;
         this.mGenreImageId = genreImageId;
+        this.mCoverImgId = coverImageId;
     }
 
     public String getGenreName() {
@@ -19,5 +20,8 @@ public class Genre {
     public int getGenreImageId() {
         return mGenreImageId;
     }
+
+    // Getter for coverImageId
+    public int getCoverImageId() { return this.mCoverImgId;}
 
 }

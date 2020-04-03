@@ -11,6 +11,6 @@ public class CollectionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Get the custom layout by id: genre_list
-        setContentView(R.layout.test_layout);
+        setContentView(R.layout.activity_collection);
     }
 }
