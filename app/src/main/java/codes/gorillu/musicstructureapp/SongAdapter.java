@@ -13,6 +13,8 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<Song> {
+
+
     // Create SongAdapter constructor
     public SongAdapter(@NonNull Context context, ArrayList<Song> songs) {
         super(context, 0, songs);

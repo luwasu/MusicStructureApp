@@ -14,12 +14,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class CollectionActivity extends AppCompatActivity {
+    @BindView(R.id.colct_cover_image)
+    ImageView colctCoverImage;
+    @BindView(R.id.colct_cover_title)
+    TextView colctCoverTitle;
+    @BindView(R.id.song_list)
+    ListView songList;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection);
+        ButterKnife.bind(this);
 
 
         // Retrieving Intent Extras
@@ -73,8 +84,6 @@ public class CollectionActivity extends AppCompatActivity {
     }
 
 
-
-
     //  Function to init songs in [Rock] category
 
     private void rockSongsInit() {
@@ -122,7 +131,6 @@ public class CollectionActivity extends AppCompatActivity {
         // Attach songs data to the Adapter
         attachAdapter(songs);
     }
-
 
 
     // Function to init songs in [Metal] category
@@ -471,7 +479,7 @@ public class CollectionActivity extends AppCompatActivity {
         SongAdapter adapter = new SongAdapter(this, songs);
 
         // Find the view id by song_list
-        ListView listView = (ListView) findViewById(R.id.song_list);
+        ListView listView = findViewById(R.id.song_list);
 
         // Attach adapter to the view
         listView.setAdapter(adapter);

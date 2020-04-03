@@ -11,21 +11,28 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class GenreActivity extends AppCompatActivity {
 
+
+    @BindView(R.id.list)
+    ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Get the custom layout by id: genre_list
         setContentView(R.layout.genre_list);
+        ButterKnife.bind(this);
 
         // Create a ArrayList<Genre>
         final ArrayList<Genre> genres = new ArrayList<>();
         // Adding genre's data
         genres.add(new Genre("Rock", R.drawable.rock, R.drawable.rock));
         genres.add(new Genre("Metal", R.drawable.metal, R.drawable.metal));
-        genres.add(new Genre("Indie", R.drawable.indie,R.drawable.indie));
+        genres.add(new Genre("Indie", R.drawable.indie, R.drawable.indie));
         genres.add(new Genre("Blues", R.drawable.blues, R.drawable.blues));
         genres.add(new Genre("Jazz", R.drawable.jazz, R.drawable.jazz));
         genres.add(new Genre("Folk", R.drawable.folk, R.drawable.folk));

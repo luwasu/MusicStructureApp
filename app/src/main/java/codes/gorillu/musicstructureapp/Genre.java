@@ -21,7 +21,6 @@ public class Genre {
         return mGenreImageId;
     }
 
-    // Getter for coverImageId
     public int getCoverImageId() { return this.mCoverImgId;}
 
 }
