@@ -21,6 +21,7 @@ public class GenreActivity extends AppCompatActivity {
         // Get the custom layout by id: genre_list
         setContentView(R.layout.genre_list);
 
+
         // Create a ArrayList<Genre>
         final ArrayList<Genre> genres = new ArrayList<>();
         // Adding genre's data

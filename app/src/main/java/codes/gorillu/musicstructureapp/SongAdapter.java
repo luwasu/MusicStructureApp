@@ -38,19 +38,19 @@ public class SongAdapter extends ArrayAdapter<Song> {
         Song currentSong = getItem(position);
 
         // Set the song title to the view
-        TextView songTitle = (TextView) listItemView.findViewById(R.id.song_title);
+        TextView songTitle = listItemView.findViewById(R.id.song_title);
         songTitle.setText(currentSong.getSongTitle());
 
         // Set the album name to the view
-        TextView songAlbum = (TextView) listItemView.findViewById(R.id.song_album);
+        TextView songAlbum = listItemView.findViewById(R.id.song_album);
         songAlbum.setText(currentSong.getSongAlbum());
 
         // Set the artist to the view
-        TextView songArtist = (TextView) listItemView.findViewById(R.id.song_artist);
+        TextView songArtist = listItemView.findViewById(R.id.song_artist);
         songArtist.setText(currentSong.getSongArtist());
 
         // Set the duration to the view
-        TextView songDuration = (TextView) listItemView.findViewById(R.id.song_duration);
+        TextView songDuration = listItemView.findViewById(R.id.song_duration);
         songDuration.setText(currentSong.getSongDuration());
 
         // Return the view

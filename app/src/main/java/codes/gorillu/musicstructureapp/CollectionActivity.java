@@ -1,5 +1,6 @@
 package codes.gorillu.musicstructureapp;
 
+
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.Bundle;
@@ -20,9 +21,9 @@ public class CollectionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection);
+
 
         // Retrieving Intent Extras
 
@@ -79,45 +80,45 @@ public class CollectionActivity extends AppCompatActivity {
 
     private void rockSongsInit() {
         // Init ArrayList<Song>
-        final ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<>();
 
         // Adding songs data
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "3:19"));
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "4:58"));
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "2:39"));
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "3:19"));
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "4:20"));
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "3:38"));
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "3:34"));
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "5:30"));
-        songs.add(new Song("Rock song title",
-                "Rock Artist",
-                "Rock Album",
-                "3:04"));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song(getString(R.string.rock_title),
+                (getString(R.string.rock_artist)),
+                (getString(R.string.rock_album)),
+                (getString(R.string.song_time))));
 
         // Attach songs data to the Adapter
         attachAdapter(songs);
@@ -128,45 +129,45 @@ public class CollectionActivity extends AppCompatActivity {
 
     private void metalSongsInit() {
         // Init ArrayList<Song>
-        final ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<>();
 
         // Adding songs data
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "3:19"));
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "4:58"));
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "2:39"));
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "3:19"));
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "4:20"));
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "3:38"));
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "3:34"));
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "5:30"));
-        songs.add(new Song("Metal song title",
-                "Metal Artist",
-                "Metal Album",
-                "3:04"));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.metal_title)),
+                (getString(R.string.metal_artist)),
+                (getString(R.string.metal_album)),
+                (getString(R.string.song_time))));
 
         // Attach songs data to the Adapter
         attachAdapter(songs);
@@ -177,45 +178,45 @@ public class CollectionActivity extends AppCompatActivity {
 
     private void indieSongsInit() {
         // Init ArrayList<Song>
-        final ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<>();
 
         // Adding songs data
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                "3:19"));
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                "4:58"));
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                "2:39"));
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                "3:19"));
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                ""));
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                "3:38"));
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                "3:34"));
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                "5:30"));
-        songs.add(new Song("Indie song title",
-                "Indie Artist",
-                "Indie Album",
-                "3:04"));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.indie_title)),
+                (getString(R.string.indie_artist)),
+                (getString(R.string.indie_album)),
+                (getString(R.string.song_time))));
 
         // Attach songs data to the Adapter
         attachAdapter(songs);
@@ -226,45 +227,45 @@ public class CollectionActivity extends AppCompatActivity {
 
     private void bluesSongsInit() {
         // Init ArrayList<Song>
-        final ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<>();
 
         // Adding songs data
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "3:19"));
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "4:58"));
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "2:39"));
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "3:19"));
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "4:20"));
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "3:38"));
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "3:34"));
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "5:30"));
-        songs.add(new Song("Blues song title",
-                "Blues Artist",
-                "Blues Album",
-                "3:04"));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.blues_title)),
+                (getString(R.string.blues_artist)),
+                (getString(R.string.blues_album)),
+                (getString(R.string.song_time))));
 
         // Attach songs data to the Adapter
         attachAdapter(songs);
@@ -274,45 +275,45 @@ public class CollectionActivity extends AppCompatActivity {
 
     private void jazzSongsInit() {
         // Init ArrayList<Song>
-        final ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<>();
 
         // Adding songs data
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "3:19"));
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "4:58"));
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "2:39"));
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "3:19"));
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "4:20"));
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "3:38"));
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "3:34"));
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "5:30"));
-        songs.add(new Song("Jazz song title",
-                "Jazz Artist",
-                "Jazz Album",
-                "3:04"));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_artist)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_title)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_artist)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_artist)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_artist)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_artist)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_artist)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_artist)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.jazz_title)),
+                (getString(R.string.jazz_artist)),
+                (getString(R.string.jazz_album)),
+                (getString(R.string.song_time))));
 
         // Attach songs data to the Adapter
         attachAdapter(songs);
@@ -322,45 +323,45 @@ public class CollectionActivity extends AppCompatActivity {
 
     private void folkSongsInit() {
         // Init ArrayList<Song>
-        final ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<>();
 
         // Adding songs data
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "3:19"));
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "4:58"));
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "2:39"));
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "3:19"));
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "4:20"));
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "3:38"));
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "3:38"));
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "5:30"));
-        songs.add(new Song("Folk song title",
-                "Folk Artist",
-                "Folk Album",
-                "3:04"));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.folk_title)),
+                (getString(R.string.folk_artist)),
+                (getString(R.string.folk_album)),
+                (getString(R.string.song_time))));
 
         // Attach songs data to the Adapter
         attachAdapter(songs);
@@ -370,45 +371,45 @@ public class CollectionActivity extends AppCompatActivity {
 
     private void hiphopSongsInit() {
         // Init ArrayList<Song>
-        final ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<>();
 
         // Adding songs data
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "3:19"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "4:58"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "2:39"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "3:19"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "4:20"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "3:38"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "3:38"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "5:30"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "3:04"));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
 
         // Attach songs data to the Adapter
         attachAdapter(songs);
@@ -419,45 +420,45 @@ public class CollectionActivity extends AppCompatActivity {
     private void soulSongsInit() {
 
         // Init ArrayList<Song>
-        final ArrayList<Song> songs = new ArrayList<Song>();
+        final ArrayList<Song> songs = new ArrayList<>();
 
         // Adding songs data
-        songs.add(new Song("Soul song title",
-                "Soul Artist",
-                "Soul Album",
-                "3:19"));
-        songs.add(new Song("Soul song title",
-                "Soul Artist",
-                "Soul Album",
-                "4:58"));
-        songs.add(new Song("Soul song title",
-                "Soul Artist",
-                "Soul Album",
-                "2:39"));
-        songs.add(new Song("Soul song title",
-                "Soul Artist",
-                "Soul Album",
-                "3:19"));
-        songs.add(new Song("Soul song title",
-                "Soul Artist",
-                "Soul Album",
-                "4:20"));
-        songs.add(new Song("Soul song title",
-                "Soul Artist",
-                "Soul Album",
-                "3:38"));
-        songs.add(new Song("Soul song title",
-                "Soul Artist",
-                "Soul Album",
-                "3:38"));
-        songs.add(new Song("Soul song title",
-                "Soul Artist",
-                "Soul Album",
-                "5:30"));
-        songs.add(new Song("Hip Hop song title",
-                "Hip Hop Artist",
-                "Hip Hop Album",
-                "3:04"));
+        songs.add(new Song((getString(R.string.soul_title)),
+                (getString(R.string.soul_artist)),
+                (getString(R.string.soul_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.soul_title)),
+                (getString(R.string.soul_artist)),
+                (getString(R.string.soul_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.soul_title)),
+                (getString(R.string.soul_artist)),
+                (getString(R.string.soul_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.soul_title)),
+                (getString(R.string.soul_artist)),
+                (getString(R.string.soul_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.soul_title)),
+                (getString(R.string.soul_artist)),
+                (getString(R.string.soul_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.soul_title)),
+                (getString(R.string.soul_artist)),
+                (getString(R.string.soul_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.soul_title)),
+                (getString(R.string.soul_artist)),
+                (getString(R.string.soul_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.soul_title)),
+                (getString(R.string.soul_artist)),
+                (getString(R.string.soul_album)),
+                (getString(R.string.song_time))));
+        songs.add(new Song((getString(R.string.hiphop_title)),
+                (getString(R.string.hiphop_artist)),
+                (getString(R.string.hiphop_album)),
+                (getString(R.string.song_time))));
 
         // Attach songs data to the Adapter
         attachAdapter(songs);
@@ -496,7 +497,7 @@ public class CollectionActivity extends AppCompatActivity {
                 toastView.getBackground().setColorFilter(Color.WHITE, PorterDuff.Mode.SRC_IN);
 
                 // Get a toast's text view
-                TextView textView = (TextView) toastView.findViewById(android.R.id.message);
+                TextView textView = toastView.findViewById(android.R.id.message);
 
                 // Change its shadow layer to transparent
                 textView.setShadowLayer(0, 0, 0, Color.TRANSPARENT);
