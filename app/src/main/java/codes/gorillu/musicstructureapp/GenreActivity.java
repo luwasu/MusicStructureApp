@@ -11,21 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class GenreActivity extends AppCompatActivity {
 
-
-    @BindView(R.id.list)
-    ListView list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         // Get the custom layout by id: genre_list
         setContentView(R.layout.genre_list);
-        ButterKnife.bind(this);
 
         // Create a ArrayList<Genre>
         final ArrayList<Genre> genres = new ArrayList<>();

@@ -10,29 +10,19 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 public class CollectionActivity extends AppCompatActivity {
-    @BindView(R.id.colct_cover_image)
-    ImageView colctCoverImage;
-    @BindView(R.id.colct_cover_title)
-    TextView colctCoverTitle;
-    @BindView(R.id.song_list)
-    ListView songList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_collection);
-        ButterKnife.bind(this);
 
         // Retrieving Intent Extras
 
