@@ -1,3 +1,3 @@
 # MusicStructureApp
 
-![Peek 2020-03-05 18-43](https://user-images.githubusercontent.com/40022621/78365841-f6521800-75bf-11ea-98c3-7c75cdc5aa04.gif)
+![Peek 2020-04-05 22-08](https://user-images.githubusercontent.com/40022621/78508841-3d8c0480-778a-11ea-99e4-4805c15a4442.gif)
